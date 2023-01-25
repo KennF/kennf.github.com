@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-74799e58","path":"/tech_notes/devops/","title":"Devops","lang":"en-US","frontmatter":{"title":"Devops","article":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{e as data};
