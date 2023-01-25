@@ -37,6 +37,7 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm docs:build
+          > docs/.vuepress/dist/.nojekyll
 
 
       # 查看 workflow 的文档来获取更多信息
@@ -47,6 +48,3 @@ jobs:
           # 这是文档部署到的分支名称
           branch: gh-pages
           folder: docs/.vuepress/dist
-        env:
-          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
